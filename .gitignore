@@ -1,33 +1,28 @@
-# 本地原始数据
-data/*
-!data/README.md
+# This repository is a navigation hub only.
+common/
+data/
+docs/
+private_references/
+projects/
+work/
+quant_project/
 
-# 临时研究文件和研报提取文本
-work/*
-!work/README.md
+# Local environments and editor settings
+.venv/
+venv/
+.env
+.vscode/
 
-# 研报、论文等可能受版权限制的原件
-private_references/*
-!private_references/README.md
-
-# 私人教程与本地笔记
-docs/private_reference/*
-
-# Python/Jupyter 生成文件
+# Python and notebook caches
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 .pytest_cache/
-.coverage
 
-# 本地环境与编辑器配置
-.env
-.venv/
-venv/
-.idea/
-.vscode/
+# Private or generated research material
+*.pdf
+*_holdings.json
 
-# 系统文件
+# Operating-system files
 .DS_Store
 Thumbs.db
-
