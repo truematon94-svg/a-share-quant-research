@@ -7,7 +7,7 @@
 | 序号 | 项目 | 状态 | 仓库 |
 |---|---|---|---|
 | 01 | SUE、PEAD事件因子与反转策略复现 | 已完成 | [a-share-sue-pead-replication](https://github.com/truematon94-svg/a-share-sue-pead-replication) |
-| 02 | 分钟级量价选股因子复现 | 准备中 | 仓库将在项目启动时建立 |
+| 02 | 分钟级量价选股因子完整复现 | 进行中（M1阶段） | [a-share-intraday-factor-replication](https://github.com/truematon94-svg/a-share-intraday-factor-replication) |
 | 03 | 机器学习股票收益预测 | 计划中 | 仓库将在项目启动时建立 |
 | 04 | 多因子Alpha组合与策略回测 | 计划中 | 仓库将在项目启动时建立 |
 
