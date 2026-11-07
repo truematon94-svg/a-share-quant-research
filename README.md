@@ -7,7 +7,7 @@
 | 序号 | 项目 | 状态 | 仓库 |
 |---|---|---|---|
 | 01 | SUE、PEAD事件因子与反转策略复现 | 已完成 | [a-share-sue-pead-replication](https://github.com/truematon94-svg/a-share-sue-pead-replication) |
-| 02 | A股日频量价选股因子复现（多因子、单因子测试） | 已完成 | [a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication) |
+| 02 | A股日频量价选股因子复现与策略优化 | 已完成 | [a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication) |
 | 03 | 机器学习股票收益预测 | 计划中 | 仓库将在项目启动时建立 |
 | 04 | 多因子Alpha组合与策略回测 | 计划中 | 仓库将在项目启动时建立 |
 
@@ -25,7 +25,7 @@
 
 项目仓库：[a-share-sue-pead-replication](https://github.com/truematon94-svg/a-share-sue-pead-replication)
 
-### 02. A股日频量价选股因子复现
+### 02. A股日频量价选股因子复现与策略优化
 
 基于华泰证券《华泰单因子测试之动量类因子》，使用聚宽日频数据完成：
 
