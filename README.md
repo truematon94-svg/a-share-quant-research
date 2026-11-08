@@ -10,6 +10,9 @@
 | 02 | A股日频量价选股因子复现与策略优化 | 已完成 | [a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication) |
 | 03 | 市场感知与多股票关联的机器学习选股策略 | 已完成 | [a-share-ml-return-prediction](https://github.com/truematon94-svg/a-share-ml-return-prediction) |
 | 04 | 沪深300多因子 Alpha 研究与约束型指数增强 | 已完成 | [csi300-multifactor-alpha-enhancement](https://github.com/truematon94-svg/csi300-multifactor-alpha-enhancement) |
+| 05 | 自主Alpha因子挖掘与持续性验证 | 持续进行中 | 私有开发仓库 |
+| 06 | 订单簿微观结构驱动的高频交易策略 | 计划中 | 暂不开设独立仓库 |
+| 07 | 波动率曲面与衍生品相对价值策略 | 计划中 | 暂不开设独立仓库 |
 
 ## 已完成项目
 
@@ -66,6 +69,22 @@
 - 明确记录静态2025版行业映射、截面市值基准权重和本地成交成本近似等研究边界，不将当前版本描述为商业级风险模型或可直接实盘系统。
 
 项目仓库：[csi300-multifactor-alpha-enhancement](https://github.com/truematon94-svg/csi300-multifactor-alpha-enhancement)
+
+## 持续进行中的项目
+
+### 05. 自主Alpha因子挖掘与持续性验证
+
+持续提出和登记自主Alpha假设，统一完成时点审计、横截面检验、成本评估、滚动样本外和因子衰减跟踪。项目同时保留有效、失效和重复信号，避免只展示正结果。目前使用私有仓库维护，待形成稳定研究成果后再决定是否公开。
+
+## 计划中的项目
+
+### 06. 订单簿微观结构驱动的高频交易策略
+
+计划在获得可靠的逐笔成交与订单簿数据后启动，重点研究微观结构信号、执行成本、延迟和容量约束。目前不创建独立仓库。
+
+### 07. 波动率曲面与衍生品相对价值策略
+
+计划围绕期权隐含波动率、期限结构、偏度与相对价值机会建立研究流程。目前处于知识与数据准备阶段，不创建独立仓库。
 
 ## 研究原则
 
