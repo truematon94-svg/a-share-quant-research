@@ -10,7 +10,7 @@
 | 02 | A股日频量价选股因子复现与策略优化 | 已完成 | [a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication) |
 | 03 | 市场感知与多股票关联的机器学习选股策略 | 已完成 | [a-share-ml-return-prediction](https://github.com/truematon94-svg/a-share-ml-return-prediction) |
 | 04 | 沪深300多因子 Alpha 研究与约束型指数增强 | 已完成 | [csi300-multifactor-alpha-enhancement](https://github.com/truematon94-svg/csi300-multifactor-alpha-enhancement) |
-| 05 | 自主Alpha因子挖掘与持续性验证 | 持续进行中 | 私有开发仓库 |
+| 05 | 自主Alpha因子挖掘与持续性验证 | 持续进行 | 私有开发仓库 |
 | 06 | 订单簿微观结构驱动的高频交易策略 | 计划中 | 暂不开设独立仓库 |
 | 07 | 波动率曲面与衍生品相对价值策略 | 计划中 | 暂不开设独立仓库 |
 
