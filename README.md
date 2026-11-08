@@ -9,7 +9,7 @@
 | 01 | SUE、PEAD事件因子与反转策略复现 | 已完成 | [a-share-sue-pead-replication](https://github.com/truematon94-svg/a-share-sue-pead-replication) |
 | 02 | A股日频量价选股因子复现与策略优化 | 已完成 | [a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication) |
 | 03 | 市场感知与多股票关联的机器学习选股策略 | 已完成 | [a-share-ml-return-prediction](https://github.com/truematon94-svg/a-share-ml-return-prediction) |
-| 04 | 多因子Alpha组合与策略回测 | 计划中 | 仓库将在项目启动时建立 |
+| 04 | 沪深300多因子 Alpha 研究与约束型指数增强 | 已完成 | [csi300-multifactor-alpha-enhancement](https://github.com/truematon94-svg/csi300-multifactor-alpha-enhancement) |
 
 ## 已完成项目
 
@@ -54,6 +54,19 @@
 
 项目仓库：[a-share-ml-return-prediction](https://github.com/truematon94-svg/a-share-ml-return-prediction)
 
+### 04. 沪深300多因子 Alpha 研究与约束型指数增强
+
+在历史时点沪深300成分股内，独立完成从候选因子检验、多因子合成到约束型指数增强的完整研究链路：
+
+- 使用2008年至2022年历史成分股和按公告日对齐的财务数据，避免以当前成分股回填历史；
+- 从价值、质量、成长、动量/反转、低波和流动性等9个候选因子出发，经训练期RankICIR和分组收益检验保留6个正式因子；
+- 比较等权、训练期IC加权和IC协方差调整三种合成方法，等权Alpha在2020年至2022年测试期取得0.853的RankICIR；
+- 在同一Alpha下比较沪深300基准近似、Top-50等权和约束型指数增强组合；约束型组合在2008年至2022年本地回测中取得4.86%年化收益、0.211 Sharpe和-38.53%最大回撤，月均换手率由Top-50的44.75%降至31.64%；
+- 完成Top-K敏感性、年度IC、因子暴露和失效期分析，并使用聚宽对2023年至2025年扩展样本外进行独立验证；
+- 明确记录静态2025版行业映射、截面市值基准权重和本地成交成本近似等研究边界，不将当前版本描述为商业级风险模型或可直接实盘系统。
+
+项目仓库：[csi300-multifactor-alpha-enhancement](https://github.com/truematon94-svg/csi300-multifactor-alpha-enhancement)
+
 ## 研究原则
 
 - 严格区分研报复现、自主扩展和原创研究；
@@ -64,5 +77,5 @@
 
 ## 主要工具
 
-Python、pandas、NumPy、SciPy、statsmodels、Matplotlib、Seaborn、JupyterLab、pytest、JoinQuant、Git/GitHub。
+Python、pandas、NumPy、SciPy、statsmodels、scikit-learn、LightGBM、XGBoost、PyTorch、cvxpy、PyArrow、Matplotlib、Seaborn、JupyterLab、pytest、JoinQuant、Git/GitHub。
 
