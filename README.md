@@ -8,7 +8,7 @@
 |---|---|---|---|
 | 01 | SUE、PEAD事件因子与反转策略复现 | 已完成 | [a-share-sue-pead-replication](https://github.com/truematon94-svg/a-share-sue-pead-replication) |
 | 02 | A股日频量价选股因子复现与策略优化 | 已完成 | [a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication) |
-| 03 | 机器学习股票收益预测 | 计划中 | 仓库将在项目启动时建立 |
+| 03 | 市场感知与多股票关联的机器学习选股策略 | 已完成 | [a-share-ml-return-prediction](https://github.com/truematon94-svg/a-share-ml-return-prediction) |
 | 04 | 多因子Alpha组合与策略回测 | 计划中 | 仓库将在项目启动时建立 |
 
 ## 已完成项目
@@ -37,6 +37,22 @@
 - 在2017年至2024年进行样本外检验，识别短期反转因子的系统性衰减；通过“中证800股票池 + 反转转动量”优化，使策略年化收益由-4.05%提升至+1.08%，改善5.13个百分点并由负转正。
 
 项目仓库：[a-share-daily-price-volume-factor-replication](https://github.com/truematon94-svg/a-share-daily-price-volume-factor-replication)
+
+### 03. 市场感知与多股票关联的机器学习选股策略
+
+参考 AAAI 2024 的 MASTER（Market-Guided Stock Transformer），在自建的A股时点正确数据上完成从预测研究到真实交易验证的完整链路：
+
+- 使用统一信息集公平比较 OLS、Ridge、LightGBM、XGBoost、Random Forest、MLP、Transformer 和 MASTER 八类模型；
+- 通过三随机种子、MASTER结构消融和特征组消融，检验市场门控、股票间动态关系及项目二量价因子的边际贡献；
+- 使用扩展窗口滚动训练、RankICIR、Newey-West日度配对检验与市场状态分段，识别模型增量的稳定性和适用阶段；
+- 严格分离论文对齐回测与真实可执行回测，纳入次日开盘成交、停牌涨跌停、交易成本和换手约束；
+- 在2022年底冻结全部模型与组合规则，仅开启一次2023—2025锁箱，并在聚宽使用相同Top-30、5日调仓规则验证；
+- 固定切分中 Random Forest 的三种子 Test RankIC 为 `0.0535 ± 0.0026`，MASTER 为神经网络中最好，Test RankIC 为 `0.0457 ± 0.0034`；
+- 锁箱期内 MASTER 的平均日度 RankIC 略高但差异不显著；可交易回测中 Random Forest 年化收益为15.38%、信息比率为0.825，明显高于 MASTER 的7.81%和0.130，揭示预测排序能力与组合经济价值并不等价。
+
+项目保留复杂模型未最终胜出的结果，并通过强基线、消融、滚动样本外和冻结锁箱控制研究者自由度。
+
+项目仓库：[a-share-ml-return-prediction](https://github.com/truematon94-svg/a-share-ml-return-prediction)
 
 ## 研究原则
 
